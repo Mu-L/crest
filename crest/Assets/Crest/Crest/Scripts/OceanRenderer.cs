@@ -202,7 +202,7 @@ namespace Crest
         float _dropDetailHeightBasedOnWaves = 0.2f;
 
         [SerializeField, Delayed, Tooltip("Resolution of ocean LOD data. Use even numbers like 256 or 384.")]
-        int _lodDataResolution = 384;
+        int _lodDataResolution = 512;
         public int LodDataResolution => _lodDataResolution;
 
         [SerializeField, Delayed, Tooltip("How much of the water shape gets tessellated by geometry. If set to e.g. 4, every geometry quad will span 4x4 LOD data texels. Use power of 2 values like 1, 2, 4...")]
