@@ -2,6 +2,8 @@
 
 // This file is subject to the MIT License as seen in the root of this folder structure (LICENSE)
 
+#if UNITY_EDITOR
+
 namespace Crest.Examples
 {
     using UnityEngine;
@@ -10,7 +12,7 @@ namespace Crest.Examples
     /// <summary>
     /// Makes the hierarchy editable only when the desired RP is active.
     /// </summary>
-    [ExecuteInEditMode]
+    [ExecuteAlways]
     public class RenderPipelineEditLock : MonoBehaviour
     {
         [SerializeField]
@@ -69,3 +71,5 @@ namespace Crest.Examples
         }
     }
 }
+
+#endif // UNITY_EDITOR
