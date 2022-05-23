@@ -195,7 +195,6 @@ namespace Crest
         static readonly int sp_RespectShallowWaterAttenuation = Shader.PropertyToID("_RespectShallowWaterAttenuation");
         static readonly int sp_MaximumAttenuationDepth = Shader.PropertyToID("_MaximumAttenuationDepth");
         static readonly int sp_FeatherWaveStart = Shader.PropertyToID("_FeatherWaveStart");
-        static readonly int sp_SamplingMultiplier = Shader.PropertyToID("_SamplingMultiplier");
         readonly int sp_AxisX = Shader.PropertyToID("_AxisX");
 
         static int s_Count = 0;
@@ -237,7 +236,6 @@ namespace Crest
             _matGenerateWaves.SetFloat(sp_RespectShallowWaterAttenuation, _respectShallowWaterAttenuation);
             _matGenerateWaves.SetFloat(sp_MaximumAttenuationDepth, OceanRenderer.Instance._lodDataAnimWaves.Settings.MaximumAttenuationDepth);
             _matGenerateWaves.SetFloat(sp_FeatherWaveStart, _featherWaveStart);
-            _matGenerateWaves.SetFloat(sp_SamplingMultiplier, 2f);
 
             // If using geo, the primary wave dir is used by the input shader to rotate the waves relative
             // to the geo rotation. If not, the wind direction is already used in the FFT gen.
