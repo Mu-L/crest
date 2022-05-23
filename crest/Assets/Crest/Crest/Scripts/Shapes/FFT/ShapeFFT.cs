@@ -143,7 +143,7 @@ namespace Crest
             {
                 _shapeFFT = shapeFFT;
                 // Need sample higher than Nyquist to get good results, especially when waves flowing
-                Wavelength = wavelength / 2f;
+                Wavelength = wavelength / LodDataMgrAnimWaves.s_waveResolutionMultiplier;
                 _waveBufferSliceIndex = waveBufferSliceIndex;
                 _mesh = mesh;
                 _material = material;
@@ -162,7 +162,7 @@ namespace Crest
                     buf.SetGlobalInt(LodDataMgr.sp_LD_SliceIndex, lodIdx);
                     buf.SetGlobalFloat(RegisterLodDataInputBase.sp_Weight, finalWeight);
                     buf.SetGlobalInt(sp_WaveBufferSliceIndex, _waveBufferSliceIndex);
-                    buf.SetGlobalFloat(sp_AverageWavelength, Wavelength * 1.5f);
+                    buf.SetGlobalFloat(sp_AverageWavelength, Wavelength * 1.5f / LodDataMgrAnimWaves.s_waveResolutionMultiplier);
                     // Either use a full screen quad, or a provided mesh renderer to draw the waves
                     if (_mesh == null)
                     {
@@ -195,6 +195,7 @@ namespace Crest
         static readonly int sp_RespectShallowWaterAttenuation = Shader.PropertyToID("_RespectShallowWaterAttenuation");
         static readonly int sp_MaximumAttenuationDepth = Shader.PropertyToID("_MaximumAttenuationDepth");
         static readonly int sp_FeatherWaveStart = Shader.PropertyToID("_FeatherWaveStart");
+        static readonly int sp_SamplingMultiplier = Shader.PropertyToID("_SamplingMultiplier");
         readonly int sp_AxisX = Shader.PropertyToID("_AxisX");
 
         static int s_Count = 0;
@@ -236,6 +237,7 @@ namespace Crest
             _matGenerateWaves.SetFloat(sp_RespectShallowWaterAttenuation, _respectShallowWaterAttenuation);
             _matGenerateWaves.SetFloat(sp_MaximumAttenuationDepth, OceanRenderer.Instance._lodDataAnimWaves.Settings.MaximumAttenuationDepth);
             _matGenerateWaves.SetFloat(sp_FeatherWaveStart, _featherWaveStart);
+            _matGenerateWaves.SetFloat(sp_SamplingMultiplier, 2f);
 
             // If using geo, the primary wave dir is used by the input shader to rotate the waves relative
             // to the geo rotation. If not, the wind direction is already used in the FFT gen.

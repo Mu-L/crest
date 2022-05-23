@@ -73,6 +73,8 @@ namespace Crest
 
         readonly int _bufferCount = 1;
 
+        public static readonly float s_waveResolutionMultiplier = 2f;
+
         public LodDataMgrAnimWaves(OceanRenderer ocean) : base(ocean)
         {
             _bufferCount = Helpers.IsMotionVectorsEnabled() ? 2 : 1;
