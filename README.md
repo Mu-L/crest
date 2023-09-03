@@ -27,13 +27,13 @@ This repository targets the built-in renderer. For other render pipelines, see t
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=70voKq6cdKQ" target="_blank"><img src="https://img.youtube.com/vi/70voKq6cdKQ/0.jpg" alt="Windbound - Brave the Storm Announce Trailer [Official]" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=JsEWfFlkPxM" target="_blank"><img src="https://img.youtube.com/vi/JsEWfFlkPxM/0.jpg" alt="Wavetale | Accolades Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=RHCPGHr3L18" target="_blank"><img src="https://img.youtube.com/vi/RHCPGHr3L18/0.jpg" alt="Critter Cove | Official Announcement Trailer" width="270" height="202" /></a>
-<a href="https://www.youtube.com/watch?feature=player_embedded&v=_Rq5dfZfQ1k" target="_blank"><img src="https://img.youtube.com/vi/_Rq5dfZfQ1k/0.jpg" alt="Out of Reach: Treasure Royale - Trailer" width="270" height="202" /></a>
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=zz_Yrw0Zang" target="_blank"><img src="https://img.youtube.com/vi/zz_Yrw0Zang/0.jpg" alt="Vertigo 2 - Launch Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=rdPdxXsgI9c" target="_blank"><img src="https://img.youtube.com/vi/rdPdxXsgI9c/0.jpg" alt="Blade and Sorcery | Official Update 10 Trailer - The Dungeons Update" width="270" height="202" /></a>
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=_Rq5dfZfQ1k" target="_blank"><img src="https://img.youtube.com/vi/_Rq5dfZfQ1k/0.jpg" alt="Out of Reach: Treasure Royale - Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=_thrrySB5YQ" target="_blank"><img src="https://img.youtube.com/vi/_thrrySB5YQ/0.jpg" alt="BUCKO • Announcement Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=zCeK_Kdxqa0" target="_blank"><img src="https://img.youtube.com/vi/QvCPhk0e7-I/0.jpg" alt="Of Ships & Scoundrels - Crest Demo" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=Qfy5P4Zygvs" target="_blank"><img src="https://img.youtube.com/vi/Qfy5P4Zygvs/0.jpg" alt="Morild Navigator" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=8l0YaOymTQE" target="_blank"><img src="https://img.youtube.com/vi/8l0YaOymTQE/0.jpg" alt="Tug Symphony" width="270" height="202" /></a>
-<a href="https://www.youtube.com/watch?feature=player_embedded&v=LNIQ6RF5lrw" target="_blank"><img src="https://img.youtube.com/vi/LNIQ6RF5lrw/0.jpg" alt="Blue Water Dev Diary - CIWS Expo" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=aZScNG8-H2U" target="_blank"><img src="https://img.youtube.com/vi/aZScNG8-H2U/0.jpg" alt="Irval the Dragon in Crest Ocean and Lordenfel Ruins" width="270" height="202" /></a>
 
 And many more…
