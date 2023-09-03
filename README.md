@@ -62,8 +62,8 @@ Grab the latest stable release from the top of the [tags](https://github.com/wav
 
 Extract the files and copy anything under *crest/Assets/Crest* into an existing project.
 
-> **Note**
-> <br> *crest/Assets/Crest/Crest-Examples* contains example content that is useful for first time users but not required for the core *Crest* functionality. Furthermore, the *crest/Assets/Crest/Development* folder is not needed as it is only for *Crest* development.
+[!NOTE]\
+*crest/Assets/Crest/Crest-Examples* contains example content that is useful for first time users but not required for the core *Crest* functionality. Furthermore, the *crest/Assets/Crest/Development* folder is not needed as it is only for *Crest* development.
 
 #### Older Unity Versions
 
@@ -76,7 +76,7 @@ If you are using any of the following *Unity* versions, then use the provided *C
 
 <hr><h3 align="center">DONATIONS</h3><hr>
 
-With your support we aim to increase our development bandwidth significantly. Please see our sponsor page for sponsor tiers and rewards:
+With your support we aim to increase our development bandwidth significantly. Please see our sponsor page for sponsor tiers:
 
 [🩷 Sponsor](https://github.com/sponsors/wave-harmonic)
 
@@ -84,4 +84,3 @@ With your support we aim to increase our development bandwidth significantly. Pl
 
 🥇 [@holdingjason](https://github.com/holdingjason)
 🚀 [@ipthgil](https://github.com/ipthgil)
-🚀 [@NeistH2o](https://github.com/NeistH2o)
