@@ -62,8 +62,9 @@ Grab the latest stable release from the top of the [tags](https://github.com/wav
 
 Extract the files and copy anything under *crest/Assets/Crest* into an existing project.
 
-[!NOTE]\
-*crest/Assets/Crest/Crest-Examples* contains example content that is useful for first time users but not required for the core *Crest* functionality. Furthermore, the *crest/Assets/Crest/Development* folder is not needed as it is only for *Crest* development.
+
+> **Note**\
+> *crest/Assets/Crest/Crest-Examples* contains example content that is useful for first time users but not required for the core *Crest* functionality. Furthermore, the *crest/Assets/Crest/Development* folder is not needed as it is only for *Crest* development.
 
 #### Older Unity Versions
 
