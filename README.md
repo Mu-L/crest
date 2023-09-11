@@ -7,7 +7,7 @@
 <p align="center">
   An advanced water system implemented in Unity<br>
   <a href="https://crest.readthedocs.io/en/latest">Documentation</a> •
-  <a href="https://discord.gg/g7GpjDC">Discord</a> •
+  <a href="https://discord.gg/JJjx9qcq83">Discord</a> •
   <a href="https://www.youtube.com/channel/UC7_ZKKCXZmH64rRZqe-C0WA">YouTube</a> •
   <a href="https://twitter.com/@crest_ocean">Twitter</a> •
   <a href="https://github.com/sponsors/wave-harmonic">Sponsorship</a>
