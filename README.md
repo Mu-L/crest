@@ -32,8 +32,8 @@ This repository targets the built-in renderer. For other render pipelines, see t
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=_Rq5dfZfQ1k" target="_blank"><img src="https://img.youtube.com/vi/_Rq5dfZfQ1k/0.jpg" alt="Out of Reach: Treasure Royale - Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=_thrrySB5YQ" target="_blank"><img src="https://img.youtube.com/vi/_thrrySB5YQ/0.jpg" alt="BUCKO • Announcement Trailer" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=zCeK_Kdxqa0" target="_blank"><img src="https://img.youtube.com/vi/QvCPhk0e7-I/0.jpg" alt="Of Ships & Scoundrels - Crest Demo" width="270" height="202" /></a>
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=EExodzbapmo" target="_blank"><img src="https://img.youtube.com/vi/EExodzbapmo/0.jpg" alt="De Leon Legends VR Game" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=Qfy5P4Zygvs" target="_blank"><img src="https://img.youtube.com/vi/Qfy5P4Zygvs/0.jpg" alt="Morild Navigator" width="270" height="202" /></a>
-<a href="https://www.youtube.com/watch?feature=player_embedded&v=8l0YaOymTQE" target="_blank"><img src="https://img.youtube.com/vi/8l0YaOymTQE/0.jpg" alt="Tug Symphony" width="270" height="202" /></a>
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=aZScNG8-H2U" target="_blank"><img src="https://img.youtube.com/vi/aZScNG8-H2U/0.jpg" alt="Irval the Dragon in Crest Ocean and Lordenfel Ruins" width="270" height="202" /></a>
 
 And many more…
