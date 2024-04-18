@@ -14,6 +14,10 @@ namespace Crest
     /// </summary>
     public static class Helpers
     {
+#if !UNITY_2023_2_OR_NEWER
+        using GraphicsFormatUsage = UnityEngine.Experimental.Rendering.FormatUsage;
+#endif
+
         internal static int SiblingIndexComparison(int x, int y) => x.CompareTo(y);
 
         /// <summary>
@@ -152,8 +156,8 @@ namespace Crest
         }
 #endif
 
-        internal static GraphicsFormat GetCompatibleTextureFormat(GraphicsFormat format, FormatUsage usage, bool randomWrite = false)
-        {
+    internal static GraphicsFormat GetCompatibleTextureFormat(GraphicsFormat format, GraphicsFormatUsage usage, bool randomWrite = false)
+    {
             var useFallback = false;
             var result = SystemInfo.GetCompatibleFormat(format, usage);
 
