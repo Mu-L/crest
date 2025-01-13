@@ -9,6 +9,20 @@ Release Notes
    \setcounter{secnumdepth}{0}
    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
+4.21.4
+------
+
+Fixed
+^^^^^
+.. bullet_list::
+
+   -  Fix GUI freezing and other potential issues when rendering Crest to a render texture
+   -  Fix NullReferenceException when Sea Floor Depth is disabled
+
+   .. only:: hdrp
+
+      -  Fix NullReferenceException from HDRP volume stack
+
 4.21.3
 ------
 
