@@ -29,3 +29,7 @@ to 512) - find the largest number you are using.
 
 For example, a *Shape FFT* with a resolution of 16 and a largest wavelength of 256 will require a threshold value at a minimum of 4,096 to have stable shifts.
 You could halve this number once at the cost of some instability, but anything low will have very noticeable shifts.
+
+.. tip::
+
+    If these requirements are too restrictive, you can enable Wave Compatibilty Mode on Shifting Origin instead.
