@@ -71,6 +71,10 @@ namespace Crest
         [Tooltip("Optionally provide a list of Gerstner components to avoid doing a FindObjectsOfType() call."), SerializeField]
         ShapeGerstnerBatched[] _overrideGerstnerList = null;
 
+        [Tooltip("Fixes incorrect shifts for incompatible setups. Please read the documentation before enabling.")]
+        [SerializeField]
+        bool _waveCompatibiltyMode;
+
         [Space(10)]
 
         [SerializeField]
@@ -96,6 +100,7 @@ namespace Crest
         ParticleSystem.Particle[] _particleBuffer = null;
 
         public static readonly int sp_CrestFloatingOriginOffset = Shader.PropertyToID("_CrestFloatingOriginOffset");
+        public static readonly int sp_CrestFloatingOriginWaveCompatibilityMode = Shader.PropertyToID("_CrestFloatingOriginWaveCompatibilityMode");
 
         Vector3 _originOffset;
 
@@ -220,12 +225,14 @@ namespace Crest
         void OnEnable()
         {
             Shader.EnableKeyword(k_Keyword);
+            Shader.SetGlobalInteger(sp_CrestFloatingOriginWaveCompatibilityMode, _waveCompatibiltyMode ? 1 : 0);
         }
 
         void OnDisable()
         {
             Shader.DisableKeyword(k_Keyword);
             Shader.SetGlobalVector(sp_CrestFloatingOriginOffset, Vector3.zero);
+            Shader.SetGlobalInteger(sp_CrestFloatingOriginWaveCompatibilityMode, 0);
         }
 
         void MoveOrigin(Vector3 newOrigin)
