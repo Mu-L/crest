@@ -9,6 +9,51 @@ Release Notes
    \setcounter{secnumdepth}{0}
    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
+4.23.0
+------
+
+Changed
+^^^^^^^
+.. bullet_list::
+
+   -  Drop support for 2020.3 and 2021.3 as required by the Unity Asset Store
+   -  Add Wave Compatibility Mode to Shifting Origin to fix shifts with incompatible settings
+   -  Add Layer to Underwater Renderer
+
+   .. only:: birp or urp
+
+      -  Add Overlay toggle to prevent rendering to background for overlay cameras `[BIRP] [URP]`
+
+   .. only:: urp
+
+      -  Officially ship Ocean.shadergraph and Shader Graph framework.
+         The Shader Graph has better integration with Unity features and lighting, but is not as efficient as the HLSL one `[URP]`
+      -  Make Ocean.shadergraph compatible with the underwater effect `[URP]`
+
+   .. only:: hdrp or urp
+
+      -  Add additional light support to Ocean.shadergraph `[HDRP] [URP]`
+      -  Deprecate CrestUnpackData.shadersubgraph, as it was from the 2020.3 workaround `[HDRP] [URP]`
+      -  Move subgraphs under :menuselection:`Create Node --> Crest` `[HDRP] [URP]`
+      -  Optimize some graphs `[HDRP] [URP]`
+
+Fixed
+^^^^^
+.. bullet_list::
+
+   -  Fix Unity 6.4 and 6.5 warnings
+   -  Fix Unity 6.6 script errors
+   -  Fix exception with batch/headless/no-gpu mode
+   -  Reduce jitters/noise in velocity queries
+
+   .. only:: hdrp
+
+      -  Fix glow at screen edge when using DLSS `[HDRP]`
+
+   .. only:: hdrp or urp
+
+      -  Fix deprecations/updated nodes across Ocean.shadergraph `[HDRP] [URP]`
+
 .. Trim PDF history
 .. raw:: latex
 
