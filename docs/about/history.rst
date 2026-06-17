@@ -9,302 +9,211 @@ Release Notes
    \setcounter{secnumdepth}{0}
    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
+.. Trim PDF history
+.. raw:: latex
+
+   \iffalse
+
+4.22.5
+------
+
+Fixed
+^^^^^
+-  Fix DXR shader errors on Shader Graph shader export `[HDRP]`
+
 4.22.4
 ------
 
 Changed
 ^^^^^^^
-.. bullet_list::
-
-   -  Expose Sea Floor Depth input Relative property in the inspector
-   -  Improve platform compatibility by adding more checks to RT formats
-   -  No longer log RT format changes (use CREST_DEBUG_LOG_FORMAT_CHANGES if needed)
+-  Expose Sea Floor Depth input Relative property in the inspector
+-  Improve platform compatibility by adding more checks to RT formats
+-  No longer log RT format changes (use CREST_DEBUG_LOG_FORMAT_CHANGES if needed)
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix Unity 6.4 compilation errors and warnings
-   -  Fix TimeProviderCutscene broken in builds
-   -  Fix water potentially breaking in builds due to RT format
-   -  Fix Examples navigation when only new input system is active
-   -  Fix input module for old input system spamming errors when only new input system is active in Examples scene
+-  Fix Unity 6.4 compilation errors and warnings
+-  Fix TimeProviderCutscene broken in builds
+-  Fix water potentially breaking in builds due to RT format
+-  Fix Examples navigation when only new input system is active
+-  Fix input module for old input system spamming errors when only new input system is active in Examples scene
 
 Documentation
 ^^^^^^^^^^^^^
-.. bullet_list::
-
-   -  Add section dedicated to the Water Body script
+-  Add section dedicated to the Water Body script
 
 4.22.3
 ------
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix underwater alpha channel handling causing problems with certain post-processing settings
-
-   .. only:: birp or urp
-
-      -  Fix artifacts and/or missing chunks of water on mobile platforms `[BIRP] [URP]`
-
-   .. only:: hdrp
-
-      -  Fix "VolumeManager" InvalidOperationException `[HDRP]`
-
-   .. only:: hdrp or urp
-
-      -  Fix exceptions and broken rendering when using Portal mode `[HDRP] [URP]`
+-  Fix underwater alpha channel handling causing problems with certain post-processing settings
+-  Fix artifacts and/or missing chunks of water on mobile platforms `[BIRP] [URP]`
+-  Fix "VolumeManager" InvalidOperationException `[HDRP]`
+-  Fix exceptions and broken rendering when using Portal mode `[HDRP] [URP]`
 
 4.22.2
 ------
 
 Changed
 ^^^^^^^
-.. bullet_list::
-
-   -  Add *Follow Horizontal Motion* option to Albedo inputs
-   -  Add *Repair Shaders* button to OceanRenderer
-   -  Warn if primary light is not directional
+-  Add *Follow Horizontal Motion* option to Albedo inputs
+-  Add *Repair Shaders* button to OceanRenderer
+-  Warn if primary light is not directional
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix underwater shader variants potentially being incorrect in builds by making stripping deterministic
-   -  Fix dynamic waves not scaling correctly across LODs
-
-   .. only:: birp
-
-      -  Fix "Graphics.CopyTexture could not find destination D3D11 texture object" `[BIRP]`
-
-   .. only:: hdrp
-
-      -  Fix potential null exceptions `[HDRP]`
-
-   .. only:: birp or urp
-
-      -  Fix atmospheric fog causing hard edges where water intersects the scene `[BIRP] [URP]`
+-  Fix underwater shader variants potentially being incorrect in builds by making stripping deterministic
+-  Fix dynamic waves not scaling correctly across LODs
+-  Fix "Graphics.CopyTexture could not find destination D3D11 texture object" `[BIRP]`
+-  Fix potential null exceptions `[HDRP]`
+-  Fix atmospheric fog causing hard edges where water intersects the scene `[BIRP] [URP]`
 
 Performance
 ^^^^^^^^^^^
-.. bullet_list::
-
-   -  Reduce underwater shader variants
-   -  Strip underwater debug variants in builds
+-  Reduce underwater shader variants
+-  Strip underwater debug variants in builds
 
 4.22.1
 ------
 
 Changed
 ^^^^^^^
-.. bullet_list::
-
-   -  Add game/scene to planar reflection camera name to better distinguish them
+-  Add game/scene to planar reflection camera name to better distinguish them
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix script compilation error when Gaia is installed on Unity 6+
-   -  Fix CS0414 script warning on build
-   -  Fix planar reflection "release target texture" exception
-   -  Fix planar reflection capturing inverted geometry in edit mode
-   -  Fix both scene and game view planar reflection camera executing, when only one should
-   -  Fix several cases of "Screen position out of view frustum" when using planar reflections
-
-   .. only:: hdrp
-
-      -  Fix underwater not working in play mode when domain reload is enabled when entering play mode `[HDRP]`
+-  Fix script compilation error when Gaia is installed on Unity 6+
+-  Fix CS0414 script warning on build
+-  Fix planar reflection "release target texture" exception
+-  Fix planar reflection capturing inverted geometry in edit mode
+-  Fix both scene and game view planar reflection camera executing, when only one should
+-  Fix several cases of "Screen position out of view frustum" when using planar reflections
+-  Fix underwater not working in play mode when domain reload is enabled when entering play mode `[HDRP]`
 
 4.22
 ----
 
 Changed
 ^^^^^^^
-.. bullet_list::
-
-   -  Add *Gaia Pro VS* integration
-   -  Add Wind Zone support (directional only)
-   -  Add *Global Wind Direction* to WaterRenderer
-   -  Add *Global Wind Turbulence* to WaterRenderer
-   -  Add *Swell* preset to ShapeGerstner
-   -  Add *Enable Render Queue Sorting* option to allow changing the render queue within the transparent pass.
-      This is useful for some third-party integrations
-   -  Add *Far Clip Plane* property to OceanDepthCache
-   -  Add UnderwaterRenderer.AfterCopyMaterial event to allow easy underwater material changes via script
-   -  No longer disable components silently if they fail validation
-   -  Improve shifting origin handling for tiled textures (like foam)
-   -  Add vertical axis support to shifting origin
-   -  Make some more properties public
-   -  Make Ocean-Underwater material the default
-
-   .. only:: hdrp
-
-      -  Validate that refraction is enabled if using transparency `[HDRP]`
-      -  Validate that custom passes are enabled if using underwater `[HDRP]`
+-  Add *Gaia Pro VS* integration
+-  Add Wind Zone support (directional only)
+-  Add *Global Wind Direction* to WaterRenderer
+-  Add *Global Wind Turbulence* to WaterRenderer
+-  Add *Swell* preset to ShapeGerstner
+-  Add *Enable Render Queue Sorting* option to allow changing the render queue within the transparent pass.
+   This is useful for some third-party integrations
+-  Add *Far Clip Plane* property to OceanDepthCache
+-  Add UnderwaterRenderer.AfterCopyMaterial event to allow easy underwater material changes via script
+-  No longer disable components silently if they fail validation
+-  Improve shifting origin handling for tiled textures (like foam)
+-  Add vertical axis support to shifting origin
+-  Make some more properties public
+-  Make Ocean-Underwater material the default
+-  Validate that refraction is enabled if using transparency `[HDRP]`
+-  Validate that custom passes are enabled if using underwater `[HDRP]`
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix "Screen position out of view frustum" with 2D scene view when planar reflections is active
-   -  Fix PSSL shader compilation error for FFT waves
-   -  Fix OceanDepthCache not working after disabling then enabling in builds
-   -  Fix *Hide Depth Cache Cam* not applying immediately
-   -  Fix OceanDepthCache's very short capture range (from 1,000 to 10,000 and now configurable)
-   -  Fix effects being incorrect based on water depth when sea level is not zero
-   -  Fix missing caustics when using shifting origin on mobile devices
-   -  Fix tiled texture quality being dependent on *LOD Resolution*.
-      They are now scaled by LOD scale.
-      This may require changing your scale values for these textures to look as they did before
-   -  Fix Spline.UpdateSpline not working in builds
-   -  Fix wave spline initialization causing inconsistency between editor and builds
-
-   .. only:: urp
-
-      -  Fix Unity fog when using orthographic projection `[URP]`
-      -  Fix Unity 6.1 "USE_FORWARD_PLUS" shader compiler warning  `[URP]`
-
-   .. only:: hdrp or urp
-
-      -  Fix errors when inspecting Shader Graph nodes `[HDRP] [URP]`
-
-
-.. Trim PDF history
-.. raw:: latex
-
-   \iffalse
-
+-  Fix "Screen position out of view frustum" with 2D scene view when planar reflections is active
+-  Fix PSSL shader compilation error for FFT waves
+-  Fix OceanDepthCache not working after disabling then enabling in builds
+-  Fix *Hide Depth Cache Cam* not applying immediately
+-  Fix OceanDepthCache's very short capture range (from 1,000 to 10,000 and now configurable)
+-  Fix effects being incorrect based on water depth when sea level is not zero
+-  Fix missing caustics when using shifting origin on mobile devices
+-  Fix tiled texture quality being dependent on *LOD Resolution*.
+   They are now scaled by LOD scale.
+   This may require changing your scale values for these textures to look as they did before
+-  Fix Spline.UpdateSpline not working in builds
+-  Fix wave spline initialization causing inconsistency between editor and builds
+-  Fix Unity fog when using orthographic projection `[URP]`
+-  Fix Unity 6.1 "USE_FORWARD_PLUS" shader compiler warning  `[URP]`
+-  Fix errors when inspecting Shader Graph nodes `[HDRP] [URP]`
 
 4.21.4
 ------
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix GUI freezing and other potential issues when rendering Crest to a render texture
-   -  Fix NullReferenceException when Sea Floor Depth is disabled
-
-   .. only:: hdrp
-
-      -  Fix NullReferenceException from HDRP volume stack `[HDRP]`
-
-   .. only:: urp
-
-      -  Remove unused *Verify Opaque And Depth Textures Enabled* property `[URP]`
+-  Fix GUI freezing and other potential issues when rendering Crest to a render texture
+-  Fix NullReferenceException when Sea Floor Depth is disabled
+-  Fix NullReferenceException from HDRP volume stack `[HDRP]`
+-  Remove unused *Verify Opaque And Depth Textures Enabled* property `[URP]`
 
 4.21.3
 ------
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix underwater rendering for Unity 6 `[HDRP]`
+-  Fix underwater rendering for Unity 6 `[HDRP]`
 
 4.21.2
 ------
 
-.. only:: urp
-
-   Breaking
-   ^^^^^^^^
-   .. bullet_list::
-
-      -  Remove foveated rendering support from 2022.3.
-         Please use Unity 6 if you need this feature `[URP]`
+Breaking
+^^^^^^^^
+-  Remove foveated rendering support from 2022.3.
+   Please use Unity 6 if you need this feature `[URP]`
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix buoyancy behaving erratically in Unity 6
-
-   .. only:: urp
-
-      -  Fix shader compilation errors due to foveated rendering in 2022.3 `[URP]`
+-  Fix buoyancy behaving erratically in Unity 6
+-  Fix shader compilation errors due to foveated rendering in 2022.3 `[URP]`
 
 4.21.1
 ------
 
 Fixed
 ^^^^^
-.. bullet_list::
-
-   -  Fix underwater rendering issues when using MSAA `[URP]`
-   -  Fix "Graphics.CopyTexture called with mismatching texture sizes" error with underwater and `STPP` `[URP]`
-   -  Fix underwater rendering issues with `STPP` when Dynamic Resolution is disabled on the camera (likely Unity bug) `[URP]`
+-  Fix underwater rendering issues when using MSAA `[URP]`
+-  Fix "Graphics.CopyTexture called with mismatching texture sizes" error with underwater and `STPP` `[URP]`
+-  Fix underwater rendering issues with `STPP` when Dynamic Resolution is disabled on the camera (likely Unity bug) `[URP]`
 
 4.21
 ----
 
 Changed
 ^^^^^^^
-.. bullet_list::
-
-   -  Take mesh back-face into account when using the underwater Volume feature
-   -  Scale water mesh extents with LOD count so it more likely reaches the horizon
-   -  Remove delay in scale changes when not needed (no varied water level)
-   -  Add LOD Bias and Maximum LOD Level overrides to Ocean Depth Cache
-   -  Add gravity override to Ocean Renderer
-   -  Expose float field for wave spectrum power values
-   -  Update Dynamic Waves gravity multiplier tooltip to note that it can be a source of instability
-   -  Guard against corrupting global settings
-   -  Unify wave gravity implementation
-
-   .. only:: hdrp
-
-      -  Greatly improve water lighting response quality to Physically Based Sky `[HDRP]`
-
-   .. only:: urp
-
-      -  Warn about opaque down sampling outline `[URP]`
-      -  Support non-uniform foveated rendering (untested) `[URP]`
-      -  Support additional lights for Forward+ `[URP]`
-      -  Support rendering layers for additional lights `[URP]`
-      -  Update warning about SSAO/Depth Priming bug to include new fixed version 2021.3.45f1 `[URP]`
+-  Take mesh back-face into account when using the underwater Volume feature
+-  Scale water mesh extents with LOD count so it more likely reaches the horizon
+-  Remove delay in scale changes when not needed (no varied water level)
+-  Add LOD Bias and Maximum LOD Level overrides to Ocean Depth Cache
+-  Add gravity override to Ocean Renderer
+-  Expose float field for wave spectrum power values
+-  Update Dynamic Waves gravity multiplier tooltip to note that it can be a source of instability
+-  Guard against corrupting global settings
+-  Unify wave gravity implementation
+-  Greatly improve water lighting response quality to Physically Based Sky `[HDRP]`
+-  Warn about opaque down sampling outline `[URP]`
+-  Support non-uniform foveated rendering (untested) `[URP]`
+-  Support additional lights for Forward+ `[URP]`
+-  Support rendering layers for additional lights `[URP]`
+-  Update warning about SSAO/Depth Priming bug to include new fixed version 2021.3.45f1 `[URP]`
 
 Fixed
 ^^^^^
-.. bullet_list::
+-  Fix artifacts (bright spots) at the horizon when using MSAA
+-  Fix "SampleHeightHelper.Init() called multiple times in one frame" warning
+-  Fix orphaned Ocean Depth Cache component on undo
+-  Fix Sphere Water Interaction spike in OnEnable
+-  Fix Sphere Water Interaction not working correctly with frame rates outside of the set simulation frequency
+-  Fix "There are too many instances of SphereWaterInteraction. A maximum of 1023 instances is supported" warning
+-  Fix wave spectrum parameters missing when editing from a ShapeGerstnerBatched
+-  Fix rendering issues (black) and exceptions when Physics.gravity is zero
+-  Fix exception in builds if no wave spectrum is set
+-  Fix Ocean Depth Cache issues with Android by using more compatible texture format
+-  Fix Ocean Depth Cache baked texture issues with Android (2021.3+ only)
+-  Fix potentially missing example scene lighting for Unity 6
+-  Fix underwater lighting being different when using color temperature or linear lighting `[BIRP]`
+-  Fix "Object.FindFirstObjectByType" missing script compilation errors `[HDRP]`
+-  Fix obsolete warnings for Unity 6 `[URP]`
+-  Fix "spherical culling" errors in Unity 6 when using OceanPlanarReflections `[URP]`
+-  Fix errors on certain Unity versions when using OceanDepthCache `[URP]`
 
-   -  Fix artifacts (bright spots) at the horizon when using MSAA
-   -  Fix "SampleHeightHelper.Init() called multiple times in one frame" warning
-   -  Fix orphaned Ocean Depth Cache component on undo
-   -  Fix Sphere Water Interaction spike in OnEnable
-   -  Fix Sphere Water Interaction not working correctly with frame rates outside of the set simulation frequency
-   -  Fix "There are too many instances of SphereWaterInteraction. A maximum of 1023 instances is supported" warning
-   -  Fix wave spectrum parameters missing when editing from a ShapeGerstnerBatched
-   -  Fix rendering issues (black) and exceptions when Physics.gravity is zero
-   -  Fix exception in builds if no wave spectrum is set
-   -  Fix Ocean Depth Cache issues with Android by using more compatible texture format
-   -  Fix Ocean Depth Cache baked texture issues with Android (2021.3+ only)
-   -  Fix potentially missing example scene lighting for Unity 6
-
-   .. only:: birp
-
-      -  Fix underwater lighting being different when using color temperature or linear lighting `[BIRP]`
-
-   .. only:: hdrp
-
-      -  Fix "Object.FindFirstObjectByType" missing script compilation errors `[HDRP]`
-
-   .. only:: urp
-
-      -  Fix obsolete warnings for Unity 6 `[URP]`
-      -  Fix "spherical culling" errors in Unity 6 when using OceanPlanarReflections `[URP]`
-      -  Fix errors on certain Unity versions when using OceanDepthCache `[URP]`
-
-.. only:: urp
-
-   Performance
-   ^^^^^^^^^^^
-   .. bullet_list::
-
-      -  No longer multi-sample depth for 2022.3+, as Unity now handles this correctly `[URP]`
+Performance
+^^^^^^^^^^^
+-  No longer multi-sample depth for 2022.3+, as Unity now handles this correctly `[URP]`
 
 4.20.1
 ------
